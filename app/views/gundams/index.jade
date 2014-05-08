@@ -1,0 +1,41 @@
+extends ../shared/template
+
+block content
+  #container
+    h1.inline List of Gundams
+    a(href='/gundams/new')
+      button Build a Gundam
+
+    .clear
+
+    h4 Filter
+    #filter
+      form.inline(method='GET', action='/gundams/query')
+        select.inline(name='position')
+          option head
+          option torso
+          option legs
+        select.inline(name='type')
+          option deathscythe
+          option heavyarms
+          option tallgeese
+          option altron
+          option shenlong
+        button.inline FILTER GUNDAMS
+
+    #gundams
+      each gundam in gundams
+        .gundam
+          .body(style='background-image:url(/img/#{gundam.torso})')
+            .head(style='background-image:url(/img/#{gundam.head})')
+            .legs(style='background-image:url(/img/#{gundam.legs})')
+          .stats
+            h3 #{gundam.name}
+            h4 TYPE: #{gundam.type}
+            h4 PURPOSE: #{gundam.purpose}
+
+            .kill
+              form(action='/gundams/#{gundam._id}/delete', method='POST')
+                button Delete
+
+            .clear

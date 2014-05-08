@@ -1,0 +1,14 @@
+extends ../shared/template
+
+block content
+  #container
+    h1.block Your New Gundam
+
+    .gundam
+      .stats
+        h2 #{gundam.name}
+        h3 TYPE: #{gundam.type}
+        h3 PURPOSE: #{gundam.purpose}
+      .body(style='background-image:url(/img/#{gundam.torso})')
+        .head(style='background-image:url(/img/#{gundam.head})')
+        .legs(style='background-image:url(/img/#{gundam.legs})')

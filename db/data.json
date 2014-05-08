@@ -1,0 +1,5 @@
+{"name": "Deathscythe", "purpose": "Assualt", "type": "Armor", "head": "head-deathscythe.png", "torso": "torso-deathscythe.jpg", "legs": "legs-deathscythe.png"}
+{"name": "Heavy Arms", "purpose": "Artillery", "type": "Fighter", "head": "head-heavyarms.png", "torso": "torso-heavyarms.jpg", "legs": "legs-heavyarms.png"}
+{"name": "Tallgeese", "purpose": "Recon", "type": "Fighter", "head": "head-tallgeese.png", "torso": "torso-tallgeese.jpg", "legs": "legs-tallgeese.png"}
+{"name": "Shenlong", "purpose": "Assault", "type": "Vehicle", "head": "head-shenlong.png", "torso": "torso-shenlong.jpg", "legs": "legs-shenlong.png"}
+{"name": "Altron", "purpose": "All-Purpose", "type": "Worker", "head": "head-altron.png", "torso": "torso-altron.jpg", "legs": "legs-altron.png"}

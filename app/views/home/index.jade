@@ -1,5 +1,9 @@
 extends ../shared/template
 
 block content
-  h1 Node.js Template
-  a.button.button-3d-highlight.button-circle(href='/help') Help
+  #container
+    div.home-title
+      img.home-logo(src='/img/logo.png')
+      h1.title Create your own mobile suit.
+      a(href='/gundams/new')
+        button BUILD

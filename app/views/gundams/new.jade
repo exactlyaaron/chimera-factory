@@ -1,0 +1,70 @@
+extends ../shared/template
+
+block content
+  #container
+    h1.inline Build a Gundam
+
+    form(method='POST', action='/gundams')
+      input(name='name', type='text', placeholder='Name...')
+      .clear
+      p Type
+      select(name='type')
+        option Vehicle
+        option Armor
+        option Fighter
+        option Worker
+      .inline
+        p Purpose
+        select(name='purpose')
+          option Assualt
+          option Artillery
+          option Recon
+          option All-Purpose
+      .inline
+        p Head
+        select(name='head')
+          option Deathscythe
+          option Heavy Arms
+          option Tallgeese
+          option Altron
+          option Shenlong
+      .inline
+        p Torso
+        select(name='torso')
+          option Deathscythe
+          option Heavy Arms
+          option Tallgeese
+          option Altron
+          option Shenlong
+      .inline
+        p Legs
+        select(name='legs')
+          option Deathscythe
+          option Heavy Arms
+          option Tallgeese
+          option Altron
+          option Shenlong
+      .clear
+      button BUILD GUNDAM
+
+    h3 Pick your parts from these powerhouses.
+    .pickfrom
+      p Deathscythe
+      .profile
+        img(src='/img/deathscythe.jpg')
+    .pickfrom
+      p Tallgeese
+      .profile
+        img(src='/img/tallgeese.jpg')
+    .pickfrom
+      p Heavy Arms
+      .profile
+        img(src='/img/heavyarms.jpg')
+    .pickfrom
+      p Altron
+      .profile
+        img(src='/img/altron.jpg')
+    .pickfrom  
+      p Shenlong
+      .profile
+        img(src='/img/shenlong.jpg')

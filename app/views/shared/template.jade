@@ -6,7 +6,21 @@ html
     link(href='/css/normalize.css', rel='stylesheet')
     link(href='/css/buttons.css', rel='stylesheet')
     link(href='/less/app.css', rel='stylesheet')
-  body
+  body(style='background-image:url(/img/'+bg+')')
+    header
+      #wrapper
+        #logo
+          a(href='/')
+            img(src='/img/logo.png')
+        nav
+          ul
+            li
+              a(href='/') Home
+            li
+              a(href='/about') About
+            li
+              a(href='/gundams') Gundams
+
     block content
 
     script(src='/js/vendor/jquery-2.1.1.js')

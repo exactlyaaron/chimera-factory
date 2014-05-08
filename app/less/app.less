@@ -1,0 +1,285 @@
+@import url(http://fonts.googleapis.com/css?family=Coda);
+body {
+  font-family: 'Coda', sans-serif;
+  margin:0;
+  padding:0;
+  background: #000 url() no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#eee;
+}
+
+h4 {
+  margin:0;
+  color:#f13636;
+}
+
+
+
+.clear {
+  width:100%;
+  clear:both;
+}
+
+.inline {
+  display:inline-block;
+}
+
+.block {
+  display:block;
+}
+
+header {
+  background-color:#222;
+  color:#eee;
+  padding:10px;
+  box-shadow: 0px 2px 9px #000;
+
+  #wrapper {
+    width:90%;
+    margin:0 auto;
+  }
+
+  #logo {
+    display:inline-block;
+
+    img {
+      width:250px;
+      height:auto;
+    }
+  }
+
+  nav {
+    float:right;
+    padding-top: 5px;
+
+    ul{
+      list-style-type:none;
+
+      li{
+        display:inline-block;
+        margin:10px 15px;
+
+        a{
+          color:#eee;
+          text-decoration:none;
+          font-size: 18px;
+        }
+
+        a:hover{
+          color:#f13636;
+          border-bottom:2px solid #f13636;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  width:90%;
+  margin:0 auto;
+}
+
+.home-logo {
+  width:90%;
+  height:auto;
+  margin:20px auto;
+  display:block;
+
+}
+
+.home-title {
+  width:65%;
+  max-width: 400px;
+  padding:20px;
+  background: rgba(0,0,0,0.7);
+  margin:30px auto;
+  text-align:center;
+
+  a {
+    text-decoration:none;
+  }
+
+  button {
+    float:none;
+    margin:0 auto;
+    padding:10px 20px;
+  }
+}
+
+
+.title {
+  text-align:center;
+  font-size:24px;
+}
+
+#whatis {
+  height:200px;
+  padding-top: 100px;
+  width:100%;
+  background: #000 url(/img/about-top-bg.jpg) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow:inset 0px 0px 25px 3px #000;
+
+  h1 {
+    font-size:32px;
+    text-shadow: 0px 0px 10px #000;
+  }
+}
+
+.center {
+  text-align:center;
+
+  a {
+    text-decoration:none;
+  }
+
+  button {
+    margin:0 auto;
+  }
+}
+
+.gundam {
+  display:inline-block;
+  margin:15px 15px 0 0;
+  color:#fff;
+  background-color:#222;
+  padding:10px;
+
+  .kill {
+      float:none;
+      font-size:12px;
+      button {
+        padding:5px;
+      }
+    }
+
+  .stats {
+    background-color:#222;
+    padding:10px;
+
+    h3 {
+      color:#f13636;
+      padding-bottom:5px;
+      margin-bottom:10px;
+      border-bottom:2px solid #f13636;
+    }
+
+    h4 {
+      color:#fff;
+      font-size:13px;
+      font-weight:normal;
+    }
+  }
+
+  h3, h4 {
+    margin:5px;
+  }
+
+  .body {
+    width:216px;
+    height:259px;
+    position:relative;
+    background-color:#fff;
+    padding:10px;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    box-shadow:inset 0px 0px 10px #000;
+    border:1px solid #ccc;
+
+    .head{
+      width:43px;
+      height:33px;
+      position:absolute;
+      left:90px;
+      top:18px;
+      background-size:100% 100%;
+    }
+
+    .legs{
+      width:144px;
+      height:180px;
+      position:absolute;
+      left:38px;
+      top: 85px;
+      background-size:100% 100%;
+    }
+  }
+}
+
+a.new-gundam {
+  color:#f13636;
+  text-decoration:none;
+  margin-left: 20px;
+}
+
+form p {
+  display:inline-block;
+  padding-right:15px;
+}
+
+.pickfrom {
+  width: 150px;
+  display:inline-block;
+  margin:5px;
+
+  p {
+    color:#fff;
+    background-color: #f13636;
+    margin:0;
+    padding:5px;
+    line-height:14px;
+  }
+}
+
+.profile {
+  width: 100%;
+  height:200px;
+  display:inline-block;
+  text-align:center;
+  background-color:#fff;
+  overflow:hidden;
+
+  img {
+    height:100%;
+    width:auto;
+  }
+}
+
+button, input, select {
+  padding:10px;
+  margin:10px;
+  color:#333;
+}
+
+button {
+  background-color: #f13636;
+  color:#fff;
+  text-shadow: 0px 1px 2px #000;
+  border-bottom:3px solid #bc2d2d;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+}
+
+input[type='text'] {
+  color:#333;
+  border: 5px solid #f13636;
+}
+
+#filter {
+  display:inline-block;
+  padding:10px 20px;
+  background-color:#222;
+  border-top:3px solid #f13636;
+
+  button {
+    padding:5px;
+    font-size:12px;
+  }
+}
