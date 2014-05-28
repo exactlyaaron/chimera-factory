@@ -14,13 +14,12 @@ exports.index = (req, res)=>{
 exports.filter = (req, res)=>{
 
   var gundams = global.nss.db.collection('gundams');
-  var type = req.query.type;
 
   var mongoObj = {};
-  mongoObj[req.query.position] = `${position}-${type}.png`;
+  mongoObj[req.query.position] = req.query.position+'-'+req.query.type+'.png';
 
   gundams.find(mongoObj).toArray((err, records)=>{
-    res.render('gundams/query', {gundams: records, bg: 'cf-bg.jpg', title: 'Gundam Builder: Gundams'});
+    res.render('gundams/index', {gundams: records, bg: 'cf-bg.jpg', title: 'Gundam Builder: Gundams'});
   });
 };
 

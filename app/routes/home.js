@@ -1,6 +1,6 @@
 'use strict';
 
-exports.index = (req, res)=>{
+  exports.index = (req, res)=>{
   res.render('home/index', {bg: 'home-bg.jpg', title: 'Gundam Builder'});
 };
 

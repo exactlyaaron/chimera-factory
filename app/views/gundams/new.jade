@@ -7,12 +7,13 @@ block content
     form(method='POST', action='/gundams')
       input(name='name', type='text', placeholder='Name...')
       .clear
-      p Type
-      select(name='type')
-        option Vehicle
-        option Armor
-        option Fighter
-        option Worker
+      .inline
+        p Type
+        select(name='type')
+          option Vehicle
+          option Armor
+          option Fighter
+          option Worker
       .inline
         p Purpose
         select(name='purpose')
@@ -64,7 +65,7 @@ block content
       p Altron
       .profile
         img(src='/img/altron.jpg')
-    .pickfrom  
+    .pickfrom
       p Shenlong
       .profile
         img(src='/img/shenlong.jpg')
